@@ -13,12 +13,15 @@ const consterStore = createSlice({
         },
         decrement(state) {
             state.count--
+        },
+        addToNum(state, action) {
+            state.count += action.payload
         }
     }
 })
 
-const { increment, decrement } = consterStore.actions
+const { increment, decrement, addToNum } = consterStore.actions
 const reducer = consterStore.reducer
 
-export { increment, decrement }
+export { increment, decrement, addToNum }
 export default reducer
