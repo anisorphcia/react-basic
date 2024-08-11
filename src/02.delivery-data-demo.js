@@ -30,7 +30,7 @@ function Father() {
   };
   return (
     <div>
-      <h2>父子传值</h2>
+      <h2>transform data between father and son</h2>
       <Son
         name={name}
         age={age}
